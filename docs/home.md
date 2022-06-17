@@ -6,7 +6,7 @@
 
 [Docsify](https://docsify.js.org/#/) can generate article, portfolio and documentation websites on the fly. Unlike Docusaurus, Hugo and many other Static Site Generators (SSG), it does not generate static html files. Instead, it smartly loads and parses your Markdown content files and displays them as a website.
 
-# Introduction
+## Introduction
 
 **Markdown** is a better way to write **HTML**, without all the complexities and ugliness that usually accompanies it.
 
@@ -30,7 +30,7 @@ John Gruber, the author of Markdown, puts it like this:
 
 Without further delay, let us go over the main elements of Markdown and what the resulting HTML looks like:
 
-## Headings
+### Headings
 
 Headings from `h1` through `h6` are constructed with a `#` for each level:
 
@@ -63,7 +63,7 @@ HTML:
 <h6>h6 Heading</h6>
 ```
 
-## Comments
+### Comments
 
 Comments should be HTML compatible
 
@@ -78,7 +78,7 @@ Comment below should **NOT** be seen:
 This is a comment
 -->
 
-## Horizontal Rules
+### Horizontal Rules
 
 The HTML `<hr>` element is for creating a "thematic break" between paragraph-level elements. In markdown, you can create a `<hr>` with any of the following:
 
@@ -95,7 +95,7 @@ ___
 ***
 
 
-## Body Copy
+### Body Copy
 
 Body copy written as normal, plain text will be wrapped with `<p></p>` tags in the rendered HTML.
 
@@ -110,9 +110,9 @@ renders to this HTML:
 <p>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</p>
 ```
 
-## Emphasis
+### Emphasis
 
-### Bold
+#### Bold
 For emphasizing a snippet of text with a heavier font-weight.
 
 The following snippet of text is **rendered as bold text**.
@@ -130,7 +130,7 @@ and this HTML
 <strong>rendered as bold text</strong>
 ```
 
-### Italics
+#### Italics
 For emphasizing a snippet of text with italics.
 
 The following snippet of text is _rendered as italicized text_.
@@ -150,7 +150,7 @@ and this HTML:
 ```
 
 
-### strikethrough
+#### strikethrough
 In GFM (GitHub flavored Markdown) you can do strikethroughs.
 
 ```markdown
@@ -166,7 +166,7 @@ HTML:
 <del>Strike through this text.</del>
 ```
 
-## Blockquotes
+### Blockquotes
 For quoting blocks of content from another source within your document.
 
 Add `>` before any text you want to quote.
@@ -203,9 +203,9 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
 >> Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
 odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
 
-## Lists
+### Lists
 
-### Unordered
+#### Unordered
 A list of items in which the order of the items does not explicitly matter.
 
 You may use any of the following symbols to denote bullets for each list item:
@@ -269,7 +269,7 @@ And this HTML
 </ul>
 ```
 
-### Ordered
+#### Ordered
 
 A list of items in which the order of items does explicitly matter.
 
@@ -333,9 +333,9 @@ Renders to:
 7. Aenean sit amet erat nunc
 8. Eget porttitor lorem
 
-## Code
+### Code
 
-### Inline code
+#### Inline code
 Wrap inline snippets of code with `` ` ``.
 
 ```markdown
@@ -352,7 +352,7 @@ HTML:
 <p>In this example, <code>&lt;section&gt;&lt;/section&gt;</code> should be wrapped with <strong>code</strong>.</p>
 ```
 
-### Indented code
+#### Indented code
 
 Or indent several lines of code by at least four spaces, as in:
 
@@ -384,7 +384,7 @@ HTML:
 ```
 
 
-### Block code "fences"
+#### Block code "fences"
 
 Use "fences"  ```` ``` ```` to block in multiple lines of code.
 
@@ -407,7 +407,7 @@ HTML:
 </pre>
 ```
 
-### Syntax highlighting
+#### Syntax highlighting
 
 GFM, or "GitHub Flavored Markdown" also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code "fence", ` ```js `, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:
 
@@ -457,7 +457,7 @@ grunt.initConfig({
 };
 ```
 
-## Tables
+### Tables
 Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.
 
 
@@ -518,9 +518,9 @@ Adding a colon on the right side of the dashes below any heading will right alig
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-## Links
+### Links
 
-### Basic link
+#### Basic link
 
 ```markdown
 [Assemble](http://assemble.io)
@@ -537,7 +537,7 @@ HTML:
 ```
 
 
-### Add a title
+#### Add a title
 
 ```markdown
 [Upstage](https://github.com/upstage/ "Visit Upstage!")
@@ -553,7 +553,7 @@ HTML:
 <a href="https://github.com/upstage/" title="Visit Upstage!">Upstage</a>
 ```
 
-### Named Anchors
+#### Named Anchors
 
 Named anchors enable you to jump to the specified anchor point on the same page. For example, each of these chapters:
 
@@ -566,18 +566,18 @@ Named anchors enable you to jump to the specified anchor point on the same page.
 will jump to these sections:
 
 ```markdown
-## Chapter 1 <a id="chapter-1"></a>
+### Chapter 1 <a id="chapter-1"></a>
 Content for chapter one.
 
-## Chapter 2 <a id="chapter-2"></a>
+### Chapter 2 <a id="chapter-2"></a>
 Content for chapter one.
 
-## Chapter 3 <a id="chapter-3"></a>
+### Chapter 3 <a id="chapter-3"></a>
 Content for chapter one.
 ```
 **NOTE** that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.
 
-## Images
+### Images
 Images have a similar syntax to links but include a preceding exclamation point.
 
 ```markdown
@@ -594,11 +594,11 @@ and using a local image (which also displays in GitHub):
 
 > Note: Example page content from [GetGrav.org](https://learn.getgrav.org/17/content/markdown), included to demonstrate the portability of Markdown-based content
 
-# Topic One  
+## Topic One  
 
 Lorem markdownum in maior in corpore ingeniis: causa clivo est. Rogata Veneri terrebant habentem et oculos fornace primusque et pomaria et videri putri, levibus. Sati est novi tenens aut nitidum pars, spectabere favistis prima et capillis in candida spicis; sub tempora, aliquo.
 
-# Topic Two
+## Topic Two
 
 Lorem markdownum vides aram est sui istis excipis Danai elusaque manu fores.
 Illa hunc primo pinum pertulit conplevit portusque pace *tacuit* sincera. Iam
@@ -606,9 +606,9 @@ tamen licentia exsulta patruelibus quam, deorum capit; vultu. Est *Philomela
 qua* sanguine fremit rigidos teneri cacumina anguis hospitio incidere sceptroque
 telum spectatorem at aequor.
 
-# Topic three
+## Topic three
 
-## Overview
+### Overview
 
 Lorem markdownum vides aram est sui istis excipis Danai elusaque manu fores.
 Illa hunc primo pinum pertulit conplevit portusque pace *tacuit* sincera. Iam
@@ -616,7 +616,7 @@ tamen licentia exsulta patruelibus quam, deorum capit; vultu. Est *Philomela
 qua* sanguine fremit rigidos teneri cacumina anguis hospitio incidere sceptroque
 telum spectatorem at aequor.
 
-## Subtopic One
+### Subtopic One
 
 Lorem markdownum murmure fidissime suumque. Nivea agris, duarum longaeque Ide
 rugis Bacchum patria tuus dea, sum Thyneius liquor, undique. **Nimium** nostri
@@ -631,7 +631,7 @@ limenque per ferre graves causa neque credi epulasque isque celebravit pisces.
 - Bello coeperunt viribus ultima fodiebant volentem spectat
 - Pallae tempora
 
-### Fuit tela Caesareos tamen per balatum
+#### Fuit tela Caesareos tamen per balatum
 
 De obstruat, cautes captare Iovem dixit gloria barba statque. Purpureum quid
 puerum dolosae excute, debere prodest **ignes**, per Zanclen pedes! *Ipsa ea
@@ -650,7 +650,7 @@ genero, virtus rite.
 - Ego uterque tibi canis
 - Tamen arbore trepidosque
 
-### Colit potiora ungues plumeus de glomerari num
+#### Colit potiora ungues plumeus de glomerari num
 
 Conlapsa tamen innectens spes, in Tydides studio in puerili quod. Ab natis non
 **est aevi** esse riget agmenque nutrit fugacis.
@@ -662,7 +662,7 @@ Conlapsa tamen innectens spes, in Tydides studio in puerili quod. Ab natis non
 Suoque descenderat illi; quaeritur ingens cum periclo quondam flaventibus onus
 caelum fecit bello naides ceciderunt cladis, enim. Sunt aliquis.
 
-## Subtopic Two
+### Subtopic Two
 
 Lorem *markdownum saxum et* telum revellere in victus vultus cogamque ut quoque
 spectat pestiferaque siquid me molibus, mihi. Terret hinc quem Phoebus? Modo se
@@ -670,7 +670,7 @@ cunctatus sidera. Erat avidas tamen antiquam; ignes igne Pelates
 [morte](http://www.youtube.com/watch?v=MghiBW3r65M) non caecaque canam Ancaeo
 contingat militis concitus, ad!
 
-### Et omnis blanda fetum ortum levatus altoque
+#### Et omnis blanda fetum ortum levatus altoque
 
 Totos utinamque nutricis. Lycaona cum non sine vocatur tellus campus insignia et
 absumere pennas Cythereiadasque pericula meritumque Martem longius ait moras
@@ -680,7 +680,7 @@ metum aethera occuluit merito mente tenebrosa et videtur ut Amor et una
 sonantia. Fuit quoque victa et, dum ora rapinae nec ipsa avertere lata, profugum
 *hectora candidus*!
 
-### Et hanc
+#### Et hanc
 
 Quo sic duae oculorum indignos pater, vis non veni arma pericli! Ita illos
 nitidique! Ignavo tibi in perdam, est tu precantia fuerat
@@ -690,7 +690,7 @@ Non Tmolus concussit propter, et setae tum, quod arida, spectata agitur, ferax,
 super. Lucemque adempto, et At tulit navem blandas, et quid rex, inducere? Plebe
 plus *cum ignes nondum*, fata sum arcus lustraverat tantis!
 
-### Adulterium tamen instantiaque puniceum et formae patitur
+#### Adulterium tamen instantiaque puniceum et formae patitur
 
 Sit paene [iactantem suos](http://www.metafilter.com/) turbineo Dorylas heros,
 triumphos aquis pavit. Formatae res Aeolidae nomen. Nolet avum quique summa
