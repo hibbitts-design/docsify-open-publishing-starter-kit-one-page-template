@@ -8,9 +8,15 @@
 * Adjusted font size and line height for Topics index items
 * Added example CSS colours to be the same as Sakai LMS
 * Streamlined settings for custom CSS colours
+* Updated default site footer behaviour and appearance
+* Simplified 'ToC' setting in index.html
+* Reduced left margin of page Table of Contents on smaller screens
+* Updated Table of Contents plugin items
+* Improved example alt text for images
 
 **Bugfix:**   
 * Added missing Sidebar name and link colour settings
+* Support the removal of the '_sidebar.md' file with standalone setting
 
 ## [v1.1.0](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v1.1.0)
 ### 05/30/2022
