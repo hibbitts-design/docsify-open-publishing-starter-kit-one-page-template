@@ -86,44 +86,37 @@ You can also clone (i.e download) a copy of your repository to your computer and
 ![ Docsify Open Publishing Page Ready for Embedding](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-ready-for-embedding.png)
 _Figure 2. Docsify Open Publishing page ready for embedding or linking as standalone content_
 
-The optional ‘standalone’ (all lowercase) URL parameter hides a site’s sidebar for seamlessly embedding Docsify page content within another platform such as Canvas LMS, Moodle, Microsoft Teams or being displayed in an existing or new Browser tab. The parameter 'embedded' is supported as an alias for `standalone`.
+The optional ‘embedded’ (all lowercase) URL parameter hides a site’s sidebar for seamlessly embedding Docsify page content within another platform such as Canvas LMS, Moodle, Microsoft Teams or being displayed in an existing or new Browser tab. The parameter 'standalone' is supported as an alias for `embedded`.
 
 To only display Docsify page content, add the following to a Docsify page URL:
 
-`?‘standalone’=true`
+`?emebedded=true`
 
 Example standard Docsify page:  
 https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/  
 
 Example Docsify page displaying only page content (i.e., no sidebar or navbar is shown):  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/?standalone=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/?emebedded=true  
 
 To optionally show a page Table of Contents (based on included Headers), use the following:
 
-`?‘standalone’=true&toc=true`
+`?emebedded=true&toc=true`
 
 Example Docsify page displaying only page content:  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?emebedded=true  
 
 Example Docsify page displaying only page content with a page Table of Contents included:  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true&toc=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?emebedded=true&toc=true  
 
 To optionally hide the 'Edit this Page' link, use the following:
 
-`?‘standalone’=true&hidegitlink=true`
+`?emebedded=true&hidegitlink=true`
 
 Example Docsify page displaying only page content:  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?emebedded=true  
 
 Example Docsify page displaying only page content with the 'Edit this Page' link hidden:  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true&hidegitlink=true.   
-
-To not hide the Navbar when displaying only page content, use the following:  
-
-`?embedded=true&navbar=true`  
-
-Example Docsify page displaying only page content (i.e., no sidebar is shown) but still showing the Navbar:  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true&navbar=true
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?emebedded=true&hidegitlink=true.   
 
 🖼 Presenting your Docsify Page Content as Standalone Webpages
 ---  
